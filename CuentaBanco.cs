@@ -7,18 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+/// <summary>
+/// Clase creada para hacer testings
+/// </summary>
 namespace RepasoGeneral
 {
-    public class CuentaBanco
+    public class CuentaBanco 
     {
-        
+        /// <summary>
+        /// Parametros creados como privados, por refactorizacion
+        /// </summary>
         private string m_customerName;
         private double m_balance;
         private bool m_frozen = false;
         private CuentaBanco()
         {
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="customerName"></param>
+        /// <param name="balance"></param>
         public CuentaBanco(string customerName, double balance)
         {
             m_customerName = customerName;
@@ -29,10 +38,15 @@ namespace RepasoGeneral
 
 
         // class under test MPRG2122 Siguiendo instrucciones
+        /// <summary>
+        /// 
+        /// </summary>
         public const string DebitAmountExceedsBalanceMessage = "Debit amountexceeds balance";
         public const string DebitAmountLessThanZeroMessage = "Debit amount lessthan zero";
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string CustomerName
         {
             get
@@ -77,6 +91,10 @@ namespace RepasoGeneral
             }
             m_balance -= amount; // intentionally incorrect code    MPRG2122 Arreglo 070422
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="amount"></param>
         public void Credit(double amount)
         {
             if (m_frozen)
