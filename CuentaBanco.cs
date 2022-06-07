@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 /// <summary>
-/// Clase creada para hacer testings
+/// Clase creada para hacer testings Y AHORA PARA PROBAR GIT DESDE ESCRITORIO
 /// </summary>
 namespace RepasoGeneral
 {
